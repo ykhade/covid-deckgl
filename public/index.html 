@@ -1,0 +1,20 @@
+<head>
+    <script src="main.js"></script>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=API-KEY&callback=initMap">
+    </script>
+
+    <style>
+        body { margin: 0; }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+</body>
