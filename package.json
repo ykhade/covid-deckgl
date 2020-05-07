@@ -4,8 +4,10 @@
   "description": "Attempting to load thousands of COVID-19 points into Google Maps. Will need to make a GCP webserver. Utilizing Deck.gl to offload expensive computatino on the GPU using WebGL",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --output-path ./public",
-    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot"
+    "build": "webpack --mode production --output-path ./public",
+    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ykhade/covid-deckgl/issues"
   },
-  "homepage": "https://github.com/ykhade/covid-deckgl#readme",
+  "homepage": "https://ykhade.github.io/covid-deckgl/",
   "devDependencies": {
     "convert-csv-to-json": "0.0.15",
     "webpack": "^4.43.0",
@@ -28,6 +30,7 @@
     "@deck.gl/aggregation-layers": "^8.1.4",
     "@deck.gl/core": "^8.1.4",
     "@deck.gl/google-maps": "^8.1.4",
-    "@deck.gl/layers": "^8.1.4"
+    "@deck.gl/layers": "^8.1.4",
+    "gh-pages": "^2.2.0"
   }
 }
