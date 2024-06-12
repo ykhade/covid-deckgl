@@ -22,9 +22,9 @@
   "homepage": "https://ykhade.github.io/covid-deckgl/",
   "devDependencies": {
     "convert-csv-to-json": "0.0.15",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
     "@deck.gl/aggregation-layers": "^8.1.4",
